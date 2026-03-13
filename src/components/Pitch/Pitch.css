@@ -1,0 +1,21 @@
+.pitch{
+padding:100px 20px;
+text-align:center;
+display:flex;
+flex-direction:column;
+}
+
+.pitch-line{
+font-size:24px;
+font-weight:600;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:16px;
+letter-spacing:-0.03em;
+}
+
+.pitch-icon{
+width:28px;
+height:28px;
+}

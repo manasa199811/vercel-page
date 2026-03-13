@@ -1,0 +1,184 @@
+.footer{
+  background:#000;
+  color:#888;
+  padding:50px 0;
+  font-family:"Geist",sans-serif;
+}
+.footer-container{
+  max-width:1280px;
+  margin:0 auto;
+  padding:0 32px;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:repeat(12,1fr);
+  column-gap:32px;
+  row-gap:48px;
+}
+
+
+.footer-column{
+  grid-column:span 2;
+}
+
+
+.footer-logo{
+  grid-column:span 2;
+  display:flex;
+  justify-content:flex-start;
+  align-items:flex-start;
+
+  font-size:20px;
+  color:white;
+
+  cursor:pointer;
+
+  transition:transform .2s ease, opacity .2s ease;
+}
+
+.footer-logo:hover{
+  transform:translateY(-2px);
+  opacity:.8;
+}
+
+
+.footer-title{
+  color:#fff;
+  font-size:12px;
+  font-weight:500;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  margin-bottom:16px;
+}
+
+
+.footer ul{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.footer li{
+  margin-bottom:6px;
+}
+
+.footer a{
+  text-decoration:none;
+  color:#888;
+  font-size:14px;
+  display:flex;
+  align-items:center;
+  gap:8px !important;
+  line-height:1.75;
+  transition:color .2s ease;
+}
+
+.footer a:hover{
+  color:#fff;
+}
+
+
+.badge{
+  font-size:10px;
+  font-weight:600;
+  color:#fff;
+  padding:2px 6px;
+  border-radius:4px;
+  margin-left:6px;
+  border:1px solid #eaeaea;
+}
+
+
+.icon{
+  width:16px;
+  height:16px;
+  color:#888;
+  flex-shrink:0;
+}
+
+.footer a:hover .icon{
+  color:#fff;
+}
+
+
+.status-row{
+  margin-top:35px;
+  border-top:1px solid rgba(255,255,255,0.08);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+
+.status{
+  display:flex;
+  align-items:center;
+  font-size:12px;
+  letter-spacing:.05em;
+  text-transform:uppercase;
+  color:#f5a623;
+}
+
+.dot{
+  width:6px;
+  height:6px;
+  background:#f5a623;
+  border-radius:50%;
+  margin-right:10px;
+}
+
+
+.theme-toggle{
+  display:flex;
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:20px;
+  padding:3px;
+}
+
+.theme-toggle button{
+  background:none;
+  border:none;
+  color:#888;
+  padding:6px 10px;
+  cursor:pointer;
+  font-size:14px;
+  border-radius:16px;
+  transition:all .2s ease;
+}
+
+.theme-toggle button.active{
+  background:#fff;
+  color:#000;
+}
+
+
+@media (max-width:1024px){
+
+  .footer-column{
+    grid-column:span 4;
+  }
+
+  .footer-logo{
+    grid-column:span 4;
+    justify-content:flex-start;
+  }
+
+}
+
+@media (max-width:640px){
+
+  .footer-column{
+    grid-column:span 6;
+  }
+
+  .footer-logo{
+    grid-column:span 6;
+  }
+
+  .status-row{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:12px;
+  }
+
+}

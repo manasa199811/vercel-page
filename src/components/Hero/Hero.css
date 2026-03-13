@@ -1,0 +1,173 @@
+.hero{
+  position:relative;
+  height:900px;
+  background:black;
+
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+
+  padding-top:180px;
+
+  overflow:hidden;
+}
+
+/* GRID */
+
+.hero-grid{
+
+  position:absolute;
+
+  top:320px;     /* grid starts below heading */
+  left:0;
+  right:0;
+  bottom:0;
+
+  background-image:
+    linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px);
+
+  background-size:120px 120px;
+
+  z-index:1;
+}
+
+/* GRADIENT LIGHT */
+
+.hero-rainbow{
+
+  position:absolute;
+
+  width:1800px;
+  height:1000px;
+
+  bottom:-420px;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  background:
+
+  radial-gradient(
+    circle at 20% 70%,
+    rgba(0,140,255,.9) 0%,
+    rgba(0,90,255,.8) 25%,
+    rgba(0,0,0,0) 60%
+  ),
+
+  radial-gradient(
+    circle at 50% 60%,
+    rgba(255,220,0,.9) 0%,
+    rgba(255,150,0,.7) 20%,
+    rgba(0,0,0,0) 60%
+  ),
+
+  radial-gradient(
+    circle at 80% 70%,
+    rgba(255,0,0,.9) 0%,
+    rgba(200,0,0,.8) 25%,
+    rgba(0,0,0,0) 60%
+  );
+
+  filter:blur(150px);
+  opacity:.9;
+
+  z-index:0;
+}
+
+/* CONTENT */
+
+.hero-content{
+  text-align:center;
+  max-width:760px;
+  z-index:3;
+}
+
+.hero-title{
+  font-size:56px;
+  font-weight:500;
+
+  letter-spacing:-0.04em;
+  line-height:1.05;
+
+  color:#fff;
+  margin-bottom:24px;
+}
+
+.hero-subtitle{
+  font-size:20px;
+  color:#9ca3af;
+
+  line-height:1.6;
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+
+  margin-top:64px;
+
+  display:flex;
+  gap:18px;
+  justify-content:center;
+
+  position:relative;
+  z-index:4;
+}
+
+.btn-primary{
+
+  background:white;
+  color:black;
+
+  padding:14px 32px;
+
+  border-radius:999px;
+  font-weight:500;
+
+  border:none;
+
+  transition:all .2s ease;
+}
+
+.btn-primary:hover{
+  transform:translateY(-1px);
+}
+
+.btn-secondary{
+
+  background:black;
+  color:white;
+
+  padding:14px 32px;
+
+  border-radius:999px;
+
+  border:1px solid rgba(255,255,255,.2);
+
+  transition:all .2s ease;
+}
+
+.btn-secondary:hover{
+  background:#111;
+}
+
+/* TRIANGLE */
+
+.hero-triangle{
+
+  position:absolute;
+
+  width:70rem;
+
+  bottom:8rem;
+  left:50%;
+
+  transform:translateX(-50%);
+
+  z-index:2;
+}
+
+.hero-triangle svg{
+  width:100%;
+}

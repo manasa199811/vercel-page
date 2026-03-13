@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Geist", sans-serif;
+  margin: 0px;
+}
+html{
+  scroll-behavior:smooth;
+}
+.section-wrapper{
+  padding-left:4rem;
+  padding-right:4rem;
+  padding-top: 4rem;
+}
+
+.section-box{
+  position:relative;
+  border:1px solid rgba(255,255,255,0.08);
+}
+.section-box::before,
+.section-box::after{
+  content:"";
+  position:absolute;
+  width:8px;
+  height:8px;
+  border:1px solid rgba(255,255,255,0.15);
+}
