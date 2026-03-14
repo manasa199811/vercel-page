@@ -10,20 +10,38 @@ html{
   scroll-behavior:smooth;
 }
 .section-wrapper{
-  padding-left:4rem;
-  padding-right:4rem;
-  padding-top: 4rem;
+  position:relative;
+  max-width:1200px;
+  margin:auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-left:1px solid rgba(255,255,255,.08);
+  border-right:1px solid rgba(255,255,255,.08);
+
 }
 
-.section-box{
-  position:relative;
-  border:1px solid rgba(255,255,255,0.08);
-}
-.section-box::before,
-.section-box::after{
+.section-wrapper::before{
+
   content:"";
   position:absolute;
-  width:8px;
-  height:8px;
-  border:1px solid rgba(255,255,255,0.15);
+  top:0;
+  left:0;
+  right:0;
+  height:1px;
+  background:rgba(255,255,255,.08);
+
 }
+
+.section-wrapper::after{
+
+  content:"";
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  height:1px;
+  background:rgba(255,255,255,.08);
+
+}
+
+

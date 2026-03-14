@@ -8,16 +8,32 @@ const Home = () => {
   return (
     <MainLayout>
       <section className="section-wrapper">
-        <div className="section-box"><Hero /></div>
+        <div className="corner-tl"></div>
+        <div className="corner-br"></div>
+        <div className="section-box">
+          <Hero />
+        </div>
       </section>
       <section className="section-wrapper">
-        <div className="section-box"><Pitch /></div>
+        <div className="corner-tl"></div>
+        <div className="corner-br"></div>
+        <div className="section-box">
+          <Pitch />
+        </div>
       </section>
       <section className="section-wrapper">
-        <div className="section-box"><EnterpriseStrip /></div>
+        <div className="corner-tl"></div>
+        <div className="corner-br"></div>
+        <div className="section-box">
+          <EnterpriseStrip />
+        </div>
       </section>
       <section className="section-wrapper">
-        <div className="section-box"><DeployCTA /></div>
+        <div className="corner-tl"></div>
+        <div className="corner-br"></div>
+        <div className="section-box">
+          <DeployCTA />
+        </div>
       </section>
     </MainLayout>
   );

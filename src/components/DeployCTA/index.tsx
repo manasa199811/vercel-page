@@ -5,11 +5,10 @@ export default function DeployCTA() {
     <section className="deploy-section">
 
       <div className="deploy-grid">
-
-        {/* LEFT SIDE */}
         <div className="deploy-box">
           <p className="deploy-text">
             <b>Ready to deploy?</b> Start building with a free account.
+            <br/>
             Speak to an expert for your <i>Pro</i> or <a>Enterprise</a> needs.
           </p>
 
@@ -25,9 +24,6 @@ export default function DeployCTA() {
 
           </div>
         </div>
-
-
-        {/* RIGHT SIDE */}
         <div className="deploy-box">
 
           <p className="deploy-text">

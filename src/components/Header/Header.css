@@ -10,38 +10,32 @@
   transition: background 0.2s ease, backdrop-filter 0.2s ease, border 0.2s ease;
 }
 
-/* Transparent when page top */
 
 .header-wrapper.transparentUntilScroll {
   background: transparent;
 }
 
-/* When scrolled */
 
-.header-wrapper[data-scrolled="true"] {
-  background: rgba(0, 0, 0, 0.75);
-  backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+.header-wrapper[data-scrolled="true"]{
+  background: rgba(0,0,0,.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom:1px solid rgba(255,255,255,.08);
 }
-
-/* HEADER */
 
 .header {
   width: 100%;
 }
 
-/* CONTAINER */
-
 .header-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 14px 32px;
+  padding: 12px 32px;
 
   display: flex;
   align-items: center;
 }
 
-/* LOGO */
 
 .logo-link {
   display: flex;
@@ -73,12 +67,12 @@
 
 .nav-menu {
   flex: 1;
-  margin-left: 2rem;
+  margin-left: 48px;
 }
 
 .nav-list {
   display: flex;
-  gap: 21px;
+  gap: 24px;
   list-style: none;
 }
 
@@ -93,42 +87,39 @@
   background: none;
   border: none;
   color: #888;
-
-  font-size: 14px;
-  font-weight: 400;
-
+font-size:14px;
+font-weight:500;
+letter-spacing:-0.01em;
   display: flex;
   align-items: center;
   gap: 6px;
-
   cursor: pointer;
-
   transition: color 0.2s ease;
 }
 
 .nav-trigger:hover {
-  color: #fff;
+    color:#e5e7eb;
 }
 
 
 .nav-link {
   color: #888;
   text-decoration: none;
-  font-size: 14px;
-
+  font-size:14px;
+font-weight:500;
+letter-spacing:-0.01em;
   transition: color 0.2s ease;
 }
 
 .nav-link:hover {
-  color: #fff;
+    color:#e5e7eb;
 }
 
 
 .chevron {
-  width: 12px;
-  height: 12px;
-  opacity: 0.6;
-
+    width:10px;
+  height:10px;
+  opacity:.6;
   transition: transform 0.2s ease;
 }
 
@@ -166,22 +157,12 @@
 
 
 .dashboard-btn {
-  background: #fff;
-  border: none;
+   background:#fff;
+  color:#000;
+  padding:6px 16px;
+  border-radius:6px;
 
-  color: #000;
-
-  font-size: 14px;
-  padding: 6px 14px;
-
-  border-radius: 6px;
-
-  display: flex;
-  align-items: center;
-
-  text-decoration: none;
-
-  transition: opacity 0.2s ease;
+  box-shadow:0 1px 1px rgba(0,0,0,.15);
 }
 
 .dashboard-btn:hover {

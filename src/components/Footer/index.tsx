@@ -229,13 +229,6 @@ const Footer: React.FC = () => {
             ▲
           </div>
         </div>
-
-        <div className="status-row">
-          <div className="status">
-            <span className="dot"></span>
-            <span>Dubai region (DXB1) is unavailable and traffic is being re-routed</span>
-          </div>
-        </div>
       </div>
     </footer>
   );
